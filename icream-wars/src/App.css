@@ -1,0 +1,13 @@
+.App button {
+  background-color: #0e3c7e;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+button + button {
+  margin-left: 10px;
+}
+.App button:disabled {
+  background-color: gray;
+}

@@ -1,0 +1,16 @@
+.Votes {
+  margin: auto;
+  width: 65%;
+}
+.Votes h2 {
+  font-family: "Caveat";
+}
+.Votes .choclate .progress {
+  color: #4f2c2c;
+}
+.Votes .vanila .progress {
+  color: #cbc0ac;
+}
+.Votes .strawberry .progress {
+  color: #de8c91;
+}
