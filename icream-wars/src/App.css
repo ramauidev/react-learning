@@ -11,3 +11,21 @@ button + button {
 .App button:disabled {
   background-color: gray;
 }
+
+.App .wrapper .AdDesigner + .Votes {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .App .wrapper {
+    display: flex;
+  }
+  .App .wrapper .AdDesigner,
+  .App .wrapper .Votes {
+    width: 50%;
+  }
+
+  .App .wrapper .AdDesigner + .Votes {
+    margin-top: 0;
+  }
+}

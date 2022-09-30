@@ -1,16 +1,28 @@
 .Votes {
-  margin: auto;
-  width: 65%;
+  width: 100%;
+  padding-left: 25px;
 }
 .Votes h2 {
   font-family: "Caveat";
 }
+.Votes .flavors {
+  width: 250px;
+  margin-top: 15px;
+}
+.Votes .flavors .vote-count {
+  margin-left: 5px;
+}
+.Votes .flavors .progress {
+  height: 20px;
+  border-radius: 5px;
+  width: 0;
+}
 .Votes .choclate .progress {
-  color: #4f2c2c;
+  background-color: #4f2c2c;
 }
 .Votes .vanila .progress {
-  color: #cbc0ac;
+  background-color: #cbc0ac;
 }
 .Votes .strawberry .progress {
-  color: #de8c91;
+  background-color: #de8c91;
 }
