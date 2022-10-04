@@ -22,10 +22,14 @@ button + button {
   }
   .App .wrapper .AdDesigner,
   .App .wrapper .Votes {
-    width: 50%;
+    flex: 1;
   }
 
   .App .wrapper .AdDesigner + .Votes {
     margin-top: 0;
   }
+}
+.ad-container {
+  display: flex;
+  justify-content: space-evenly;
 }

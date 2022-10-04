@@ -1,6 +1,7 @@
-.Header h1 {
-  font-family: "Caveat";
-  text-align: center;
+.Header {
+  display: flex;
+  justify-content: space-between;
   color: #0e3c7e;
   box-shadow: 0 2px #c8c8c8;
+  font-family: "Caveat";
 }

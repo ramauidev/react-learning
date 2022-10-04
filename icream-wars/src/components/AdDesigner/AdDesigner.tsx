@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Ad from "../Ad/Ad";
 import "./AdDesigner.css";
 
 const AdDesigner = () => {
@@ -25,10 +26,12 @@ const AdDesigner = () => {
   return (
     <div className="AdDesigner">
       <h2>Ad Designer</h2>
-      <section className={"add " + (darkTheme ? "dark" : "light")}>
+      {/* <section className={"Ad " + (darkTheme ? "dark" : "light")}>
         <h3>Vote For</h3>
         <p style={flavorFontsize}>{flavor}</p>
-      </section>
+      </section> */}
+
+      <Ad flavor={flavor} fontSize={fontsize} darkTheme={darkTheme} />
 
       <section>
         <h3>What to Support</h3>
