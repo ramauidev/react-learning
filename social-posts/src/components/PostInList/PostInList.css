@@ -1,0 +1,18 @@
+.PostInList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.386);
+}
+.PostInList p {
+  margin: 5px;
+}
+.PostInList .post-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.post-action button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
