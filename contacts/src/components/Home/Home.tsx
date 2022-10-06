@@ -30,11 +30,21 @@ const Home = () => {
 
   const [showForm, setShowForm] = useState(false);
 
+  const deleteContact = (index: number): void => {
+    setContacts((prev) => [...prev.slice(0, index), ...prev.slice(index + 1)]);
+  };
+
+  const addContact = (contact: Contact): void => {
+    setContacts((prev) => [...prev.slice(0), contact]);
+  };
+
   return (
     <div className="Home">
-      <button onClick={() => setShowForm(!showForm)}>Show Form</button>
-      {showForm && <ContactForm />}
-      <ContactList contacts={contacts} />
+      <button onClick={() => setShowForm(true)}>Show Form</button>
+      {showForm && (
+        <ContactForm onSubmitForm={addContact} onClose={setShowForm} />
+      )}
+      <ContactList contacts={contacts} onDelete={deleteContact} />
     </div>
   );
 };

@@ -4,14 +4,19 @@ import "./ContactList.css";
 
 interface Props {
   contacts: Contact[];
+  onDelete: (index: number) => void;
 }
 
-const ContactList = ({ contacts }: Props) => {
+const ContactList = ({ contacts, onDelete }: Props) => {
   return (
     <div className="ContactList">
       <ul>
-        {contacts.map((contact) => (
-          <ContactCard key={contact.phoneNumber} contact={contact} />
+        {contacts.map((contact, index) => (
+          <ContactCard
+            key={contact.phoneNumber}
+            contact={contact}
+            onDelete={() => onDelete(index)}
+          />
         ))}
       </ul>
     </div>
