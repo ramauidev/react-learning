@@ -3,9 +3,10 @@ import "./PostInList.css";
 
 interface Props {
   post: Post;
+  onDelete: () => void;
 }
 
-const PostInList = ({ post }: Props) => {
+const PostInList = ({ post, onDelete }: Props) => {
   return (
     <div className="PostInList">
       <div className="post-details">
@@ -13,7 +14,7 @@ const PostInList = ({ post }: Props) => {
         <p>{post.thought}</p>
       </div>
       <div className="post-action">
-        <button>
+        <button onClick={onDelete}>
           <i className="material-icons">delete</i>
         </button>
       </div>

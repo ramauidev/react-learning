@@ -1,0 +1,43 @@
+.PostForm {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.PostForm form {
+  display: grid;
+  background: #79c5e8;
+  width: 50%;
+  padding: 25px;
+}
+.PostForm form label {
+  margin-top: 5px;
+}
+.PostForm form .title,
+.PostForm form .thought {
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 2px;
+  height: 25px;
+}
+.PostForm form .thought {
+  height: 50px;
+}
+.PostForm form .addPost {
+  margin-top: 5px;
+  border: 1px solid black;
+  height: 40px;
+}
+.PostForm .close-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.PostForm .close {
+  background: none;
+  border: none;
+}
