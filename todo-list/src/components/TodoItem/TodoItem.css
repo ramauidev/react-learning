@@ -1,0 +1,17 @@
+.TodoItem .completed {
+  text-decoration-line: line-through;
+}
+.TodoItem .delete,
+.TodoItem .edit {
+  background: none;
+  border: none;
+  float: right;
+  cursor: pointer;
+}
+.TodoItem .complete {
+  color: #ff69b4;
+  border: 1px solid #ff69b4;
+  background: none;
+  border-radius: 4px;
+  margin-right: 5px;
+}

@@ -1,0 +1,16 @@
+.TodoForm {
+  display: grid;
+}
+.TodoForm input {
+  border: 0.5px solid #eee;
+  border-radius: 2px;
+  margin: 10px 0;
+  height: 25px;
+}
+.TodoForm button {
+  border: 0.5px solid #eee;
+  background-color: #ff1493;
+  color: #fff;
+  height: 25px;
+  cursor: pointer;
+}
