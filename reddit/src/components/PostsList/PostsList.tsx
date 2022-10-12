@@ -11,7 +11,7 @@ const PostsList = ({ posts }: Props) => {
     <div className="PostsList">
       <ul>
         {posts.map((post) => (
-          <Post post={post} key={post.data.id} />
+          <Post post={post.data} key={post.data.id} />
         ))}
       </ul>
     </div>
