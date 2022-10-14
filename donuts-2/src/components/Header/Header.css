@@ -1,0 +1,8 @@
+.Header {
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+  box-shadow: 0 2px #c8c8c8;
+}
+.Header .cart-count {
+  text-decoration: none;
+}

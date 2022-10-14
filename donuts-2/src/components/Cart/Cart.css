@@ -1,0 +1,27 @@
+.Cart .header,
+.Cart .row {
+  display: flex; /* aligns all child elements (flex items) in a row */
+  align-items: center;
+  padding: 5px;
+}
+.Cart .col {
+  flex: 1; /* distributes space on the line equally among items */
+}
+.Cart .header {
+  border-bottom: 1px solid black;
+}
+.Cart button {
+  border: none;
+  background: none;
+}
+.Cart .cart-table {
+  margin-bottom: 25px;
+}
+.Cart .total-price {
+  border: 2px solid black;
+}
+.Cart .total-price {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
