@@ -7,6 +7,7 @@ const Header = () => {
       <Link to="/">
         <h1>Giphy Project</h1>
       </Link>
+      <Link to="/gifs/favorites">Favorites</Link>
     </header>
   );
 };

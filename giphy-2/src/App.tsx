@@ -8,6 +8,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Details from "./components/Details/Details";
+import Favorites from "./components/Favorites/Favorites";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/gifs/favorites" element={<Favorites />} />
           <Route path="/gifs/:id" element={<Details />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

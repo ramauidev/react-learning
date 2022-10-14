@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
+import FavoritesContext from "../../context/FavoritesContext";
 import Gif from "../../models/Gif";
 import "./Result.css";
 
@@ -8,6 +10,8 @@ interface Props {
 }
 
 const Result = ({ gif }: Props) => {
+  const { addFavorite, removeFavorite, isFav } = useContext(FavoritesContext);
+
   return (
     <li className="Result">
       <h2>{gif.title}</h2>
@@ -21,6 +25,11 @@ const Result = ({ gif }: Props) => {
       <NavLink className="links" to={`gifs/${encodeURIComponent(gif.id)}`}>
         Open Details
       </NavLink>
+      {isFav(gif.id) ? (
+        <button onClick={() => removeFavorite(gif.id)}>Remove Favorite</button>
+      ) : (
+        <button onClick={() => addFavorite(gif)}>Add Favorite</button>
+      )}
     </li>
   );
 };

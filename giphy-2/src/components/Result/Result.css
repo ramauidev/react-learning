@@ -1,3 +1,7 @@
 .Result .links {
   display: block;
 }
+.Result img {
+  height: 250px;
+  width: 500px;
+}
